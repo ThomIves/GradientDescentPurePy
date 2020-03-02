@@ -1,7 +1,7 @@
 # Gradient Descent
 Gradient Descent Using Pure Python Without NumPy or SciPy
 
-![Gradient Descent Logo](https://github.com/ThomIves/GradientDescentPurePy/blob/master/Gradient_Descent_Logo.png)
+![Gradient Descent Logo](https://github.com/ThomIves/GradientDescentPurePy/Gradient_Descent_Pure_Py_Logo.png)
 > A progressive guide on how to develop gradient descent code for a given model using python.
 
 This code accompanies the blog post [Gradient Descent Using Pure Python without Numpy or Scipy](https://integratedmlai.com/gradient-descent-using-pure-python-without-numpy-or-scipy/).
