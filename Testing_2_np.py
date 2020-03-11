@@ -1,4 +1,4 @@
-import Gradient_Descent_Solver as GDS
+import Gradient_Descent_Solver_with_Numpy as GDSnp
 
 # #############################################################################
 # Setup
@@ -9,8 +9,8 @@ LR = 0.001
 
 # Cheat to get Y easier
 Y = [[0], [0], [0]]
-wa = [1.0, 0.5, 0.25]  # with numpy [[1.0], [0.5], [0.25]]
-gds = GDS.Gradient_Descent_Solver(X, Y, LR)
+wa = [[1.0], [0.5], [0.25]]  # [1.0, 0.5, 0.25] without numpy
+gds = GDSnp.Gradient_Descent_Solver_with_Numpy(X, Y, LR)
 gds.set_weights(wa)
 Y = gds.model(X)
 

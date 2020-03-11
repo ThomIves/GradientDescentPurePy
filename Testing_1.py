@@ -28,7 +28,6 @@ gds.plot_solution_convergence()
 Xt = [[1, 0],
       [1, 3],
       [1, 5]]
-Xtp = [0, 3, 5]
 Yt = gds.model(Xt)
 
 # Report

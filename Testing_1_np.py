@@ -1,16 +1,17 @@
-import Gradient_Descent_Solver as GDS
+import Gradient_Descent_Solver_with_Numpy as GDSnp
+import numpy as np
+import sys
 
 # #############################################################################
 # Setup
-X = [[1, 2, 4],
-     [1, 4, 16],
-     [1, 6, 36]]
+X = [[1, 2],
+     [1, 4]]
 LR = 0.001
 
 # Cheat to get Y easier
-Y = [[0], [0], [0]]
-wa = [1.0, 0.5, 0.25]  # with numpy [[1.0], [0.5], [0.25]]
-gds = GDS.Gradient_Descent_Solver(X, Y, LR)
+Y = [[0], [0]]
+wa = [[1.0], [0.5]]
+gds = GDSnp.Gradient_Descent_Solver_with_Numpy(X, Y, LR)
 gds.set_weights(wa)
 Y = gds.model(X)
 
@@ -26,14 +27,9 @@ gds.report_results()
 gds.plot_solution_convergence()
 
 # Test
-Xt = [[1, 0, 0],
-      [1, 2, 4],
-      [1, 3, 9],
-      [1, 4, 16],
-      [1, 5, 25],
-      [1, 6, 36],
-      [1, 7, 49]]
-
+Xt = [[1, 0],
+      [1, 3],
+      [1, 5]]
 Yt = gds.model(Xt)
 
 # Report

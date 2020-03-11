@@ -1,4 +1,5 @@
-import Gradient_Descent_Solver as GDS
+import Gradient_Descent_Solver_with_Numpy as GDSnp
+import numpy as np
 import sys
 
 # #############################################################################
@@ -20,10 +21,11 @@ def Y_maker(X, w):
 
 
 Y = Y_maker(X, wa)
+Y = [[y] for y in Y]
 LR = 0.001
 
 # Cheat to get Y easier
-gds = GDS.Gradient_Descent_Solver(X, Y, LR)
+gds = GDSnp.Gradient_Descent_Solver_with_Numpy(X, Y, LR)
 
 # Solve
 gds.train()
